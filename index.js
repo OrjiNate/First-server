@@ -10,6 +10,10 @@ app.get('/users', (req, res) => {
   res.send('How fa guys, users section')
 })
 
+app.get('/forget-password', (req, res) => {
+  res.send('This is forget password route')
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
