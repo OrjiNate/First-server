@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
 app.get('/users', (req, res) => {
   res.send('How fa guys, users section')
 })
+app.get('/messages', (req, res) => {
+  res.send('this route gives list of messages')
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
