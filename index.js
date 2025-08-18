@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
 
 app.get('/users', (req, res) => {
   res.send('How fa guys, users section')
+})
+
+app.get('/register', (req, res) => {
+  res.send('registration successful')
 })
 
 app.listen(port, () => {
